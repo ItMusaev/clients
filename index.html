@@ -15,10 +15,10 @@
 			<nav class="header__nav">
 				<a class="header__logo"><img src="img/favicon.png" alt=""></a>
 				<ul class="header__menu">
-					<li><a data-scroll="#">Кэшбек</a></li>
-					<li><a data-scroll="#">Что мы предлагаем?</a></li>
-					<li><a data-scroll="#">Оплачено</a></li>
-					<li><a data-scroll="#">Контакты</a></li>
+					<li><a data-scroll="#home">Кэшбек</a></li>
+					<li><a data-scroll="#weoffer">Что мы предлагаем?</a></li>
+					<li><a data-scroll="#buyform__bottom">Оплачено</a></li>
+					<li><a data-showmodal="#show">Контакты</a></li>
 				</ul>
 				<a href="#" class="header__order">Заказть</a>
 			</nav>
@@ -30,7 +30,7 @@
 
 	
 	<!-- home -->
-	<section class="home">
+	<section class="home" id="home">
 		<div class="container">
 			<h1>Топливо с кэшбэком 42%</h1>
 			<h2>На любой азс по всей россии</h2>
@@ -59,25 +59,25 @@
 		<div class="container">
 			<div class="repeat__bls">
 				<div class="repeat__image">
-					<img src="img/action.jpg" alt="">
+					<img src="img/checklist.jpg" alt="">
 				</div>
 				<div class="repeat__texts">
 					<h2>Последовательность действий</h2>
-					<p><span>1.</span>Регистрируетесь в системе GRS</p>
-					<p><span>2.</span>осле каждой покупки топлива вводите сумму чека в специальную форму</p>
-					<p><span>3.</span>Система начинает автоматически начислять бонусные баллы на Ваш баланс</p>
-					<p><span>4.</span>Переводите бонусные балы в рубли на Вашу банковскую карту в любой момент</p>
+					<p><span>1</span>Регистрируетесь в системе GRS</p>
+					<p><span>2</span>После каждой покупки топлива вводите сумму чека в специальную форму</p>
+					<p><span>3</span>Система начинает автоматически начислять бонусные баллы на Ваш баланс</p>
+					<p><span>4</span>Переводите бонусные балы в рубли на Вашу банковскую карту в любой момент</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- weoffer -->
-	<section class="weoffer">
+	<section class="weoffer" id="weoffer">
 		<div class="container">
 			<div class="weoffer__bls">
 				<div class="weoffer_image">
-					<img src="img/weoffer.jpg" alt="">
+					<img src="img/weoffer.png" alt="">
 				</div>
 				<div class="weoffer__texts">
 					<div class="weoffer__text __first">
@@ -128,7 +128,7 @@
 					</div>
 				</div>
 				<div class="order__image">
-					<img src="img/checklist.png" alt="">
+					<img src="img/order.jpg" alt="">
 				</div>
 		    </div>
 	    </div>
@@ -138,7 +138,7 @@
 	<section class="buyform">
 		<div class="buyform__top">
 			<div class="container">
-				<h2>Как купить</h2>
+				<h2>Сделать заказ</h2>
 				<ul>
 					<li><span>1</span>Заполните форму заказа ниже (или кнопка Заказать вверху сайта)</li>
 					<li><span>2</span>Получите платежную ссылку для оплаты</li>
@@ -151,13 +151,13 @@
 				</ul>
 			</div>
 		</div>
-		<div class="buyform__bottom">
+		<div class="buyform__bottom" id="buyform__bottom">
 			<div class="container">
-				<h2>Свяжитесь с нами</h2>
+				<h2>Сделать заказ <span>/</span> Сообщить об оплате</h2>
 				<div class="buyform__btns">
 					<div class="buyform__btn __active">
 						<a href="">Сделать заказ</a>
-						<p>Чтобы сделать заказ заполните форму нижЕ</p>
+						<p>Чтобы сделать заказ заполните форму ниже</p>
 					</div>
 					<div class="buyform__btn">
 						<a href="">Сообщить об оплаие</a>
@@ -187,6 +187,29 @@
 		<p>Топливо с кэшбэком © 2025. все права защищены.</p>
 	</div>
 </footer>
+
+<div class="modal-contact">
+	<div class="buyform__bottom" id="buyform__bottom">
+		<div class="modal-contact__close">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="buyform__forms">
+				<div class="buyform__form">
+					<form>
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Город">
+						<input type="text" placeholder="Телефон с кодом (телеграм, вайбер, вацап)">
+						<textarea placeholder="ВАШ ВОПРОС ..."></textarea>
+						<a href="">Отправить</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="up-btn js-scroll-top"><img src="img/up-arrow.png" alt=""></div>
 
