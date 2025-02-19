@@ -9813,10 +9813,6 @@ if ( !noGlobal ) {
 return jQuery;
 }));;
 $( document ).ready(function() {
-    console.log( "ready!" );
-});
-
-
 
 // Событие, которое отслеживает скроллит ли человек.
 document.addEventListener('scroll', function () {
@@ -9847,4 +9843,30 @@ $('a[data-showmodal]').click(function() {
 
 $('.modal-contact__close').click(function() {
     $('.modal-contact').removeClass('__show');
+});
+
+
+$('.buyform__btn.__before').click(function() {
+    $('.buyform__btn').removeClass('__active');
+    $(this).addClass('__active');
+    $('.buyform__form.__before').addClass('__active');
+    $('.buyform__form.__after').removeClass('__active');
+});
+
+$('.buyform__btn.__after').click(function() {
+    $('.buyform__btn').removeClass('__active');
+    $(this).addClass('__active');
+    $('.buyform__form.__before').removeClass('__active');
+    $('.buyform__form.__after').addClass('__active');
+});
+
+
+$('.mobile__openclose').on('click', function() {
+    $(this).toggleClass('__active');
+    $('.header__menu').toggleClass('__show');
+    $('.header').toggleClass('is-show2');
+});
+
+
+
 });
