@@ -9817,3 +9817,34 @@ $( document ).ready(function() {
 });
 
 
+
+// Событие, которое отслеживает скроллит ли человек.
+document.addEventListener('scroll', function () {
+  if ($(window).scrollTop() > 1000) {
+    // если больше 1000 → добавляем класс
+    $('.header').addClass('is-show');
+  } else {
+    // если меньше 1000 → удаляем класс
+    $('.header').removeClass('is-show');
+  }
+})
+
+
+$('.header__menu li a[data-scroll]').click(function() {
+    var scrollName = $(this).attr('data-scroll'),
+    scrollElem = $(scrollName),
+    scrollTop = scrollElem.offset().top;
+
+    $('html, body').animate({
+        scrollTop: scrollTop
+    }, 500);
+});
+
+
+$('a[data-showmodal]').click(function() {
+    $('.modal-contact').addClass('__show');
+});
+
+$('.modal-contact__close').click(function() {
+    $('.modal-contact').removeClass('__show');
+});
