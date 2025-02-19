@@ -17,10 +17,16 @@
 				<ul class="header__menu">
 					<li><a data-scroll="#home">Кэшбек</a></li>
 					<li><a data-scroll="#weoffer">Что мы предлагаем?</a></li>
-					<li><a data-scroll="#buyform__bottom">Оплачено</a></li>
+					<li><a data-showmodal="#show">Оплачено</a></li>
 					<li><a data-showmodal="#show">Контакты</a></li>
+					<a data-showmodal="#show" class="header__order __md">Заказть</a>
 				</ul>
-				<a href="#" class="header__order">Заказть</a>
+				<a data-showmodal="#show" class="header__order">Заказть</a>
+				<div class="mobile__openclose">
+					<span class="__first"></span>
+					<span class="__second"></span>
+					<span class="__third"></span>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -155,21 +161,44 @@
 			<div class="container">
 				<h2>Сделать заказ <span>/</span> Сообщить об оплате</h2>
 				<div class="buyform__btns">
-					<div class="buyform__btn __active">
-						<a href="">Сделать заказ</a>
+					<div class="buyform__btn __before __active">
+						<a>Сделать заказ</a>
 						<p>Чтобы сделать заказ заполните форму ниже</p>
 					</div>
-					<div class="buyform__btn">
-						<a href="">Сообщить об оплаие</a>
+					<div class="buyform__btn __after">
+						<a>Сообщить об оплаие</a>
 						<p>После оплаты заполните эту форму</p>
 					</div>
 				</div>
 				<div class="buyform__forms">
-					<div class="buyform__form">
+					<div class="buyform__form __before __active">
 						<form>
 							<input type="text" placeholder="Ваше имя">
 							<input type="text" placeholder="Город">
 							<input type="text" placeholder="Телефон с кодом (телеграм, вайбер, вацап)">
+							<select name="pets" id="pet-select">
+								<option value="">Выберите сбособ оплаты</option>
+								<option value="sposob1">Способ 1</option>
+								<option value="sposob2">Способ 2</option>
+								<option value="sposob3">Способ 3</option>
+								<option value="sposob4">Способ 4</option>
+							</select>
+							<textarea placeholder="Примечание к заказу (не обязательно) ..."></textarea>
+							<a href="">Заказать</a>
+						</form>
+					</div>
+					<div class="buyform__form __after">
+						<form>
+							<input type="text" placeholder="Ваше имя 2">
+							<input type="text" placeholder="Город">
+							<input type="text" placeholder="Телефон с кодом (телеграм, вайбер, вацап)">
+							<select name="pets" id="pet-select">
+								<option value="">Выберите сбособ оплаты</option>
+								<option value="sposob1">Способ 1</option>
+								<option value="sposob2">Способ 2</option>
+								<option value="sposob3">Способ 3</option>
+								<option value="sposob4">Способ 4</option>
+							</select>
 							<textarea placeholder="Примечание к заказу (не обязательно) ..."></textarea>
 							<a href="">Заказать</a>
 						</form>
@@ -197,6 +226,29 @@
 		<div class="container">
 			<h2>Контакты</h2>
 			<div class="buyform__forms">
+				<div class="buyform__form __active">
+					<form>
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Город">
+						<input type="text" placeholder="Телефон с кодом (телеграм, вайбер, вацап)">
+						<textarea placeholder="ВАШ ВОПРОС ..."></textarea>
+						<a href="">Отправить</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <!-- 
+	<div class="buyform__bottom" id="buyform__bottom_close">
+		<div class="modal-contact__close">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="container">
+			<h2>СООБЩЕНИЕ ОТПРАВЛЕНО!</h2>
+			<p>В САМОЕ БЛИЖАЙШЕЕ ВРЕМЯ С ВАМИ СВЯЖЕТСЯ НАШ МЕНЕДЖЕР</p>
+			<div class="buyform__forms">
 				<div class="buyform__form">
 					<form>
 						<input type="text" placeholder="Ваше имя">
@@ -209,6 +261,7 @@
 			</div>
 		</div>
 	</div>
+	-->
 </div>
 
 <div class="up-btn js-scroll-top"><img src="img/up-arrow.png" alt=""></div>
