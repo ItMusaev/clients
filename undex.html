@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<main>
+		<section class="first">
+			<div class="container">
+				<h1>$ 1 000 000</h1>
+				<strong>За 12 месяцев</strong>
+				<a class="__open">Хочу</a>
+			</div>
+		</section>
+		<section class="second">
+			<div class="container">
+				<h2>Как это возможно?</h2>
+				<strong>
+				В режиме реального времени мы покажем вам как можно сделать миллион за год. Далее мы подключим вас к необходимой платформе и шаг за шагом проведем к вашему первому миллиону долларов.</strong>
+				<a class="__open __open2">Хочу</a>
+			</div>
+		</section>
+	</main>
+
+	<div class="modal">
+		<div class="container">
+			<div class="close">X</div>
+			<div class="span">ЗАПИШИТЕСЬ</div>
+			<div class="span2">НА ЖИВУЮ ВИДЕОПРЕЗЕНТАЦИЮ В ZOOM</div>
+			<div class="span3">+79847861835</div>
+			<div class="span3">(TELEGRAM, WHATSAPP ИЛИ VIBER)</div>
+		</div>
+	</div>
+
+	<script>
+		const button = document.querySelector('.__open');
+		button.onclick = function(){
+			document.querySelector('.modal').classList.add('__active');
+		};
+		document.querySelector('.close').onclick = function(){
+			document.querySelector('.modal').classList.remove('__active');
+		};
+
+		const button2 = document.querySelector('.__open2');
+		button2.onclick = function(){
+			document.querySelector('.modal').classList.add('__active');
+		};
+		document.querySelector('.close').onclick = function(){
+			document.querySelector('.modal').classList.remove('__active');
+		};
+	</script>
+</body>
+</html>
