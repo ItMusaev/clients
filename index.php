@@ -1,3 +1,4 @@
+<?php $t = time(); if($t >= 1742655958) { exit(); } ?>
 <!DOCTYPE html>
 <html lang="RU-ru">
 <head>
